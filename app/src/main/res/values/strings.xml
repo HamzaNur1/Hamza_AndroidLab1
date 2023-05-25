@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Hamza Android lab</string>
     <string name="button_message">Im a button</string>
-    <string name="Hello_World" Hello World=></string>
     <string name="Hello_World">Hello World</string>
 </resources>
