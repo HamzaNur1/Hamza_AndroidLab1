@@ -2,13 +2,29 @@ package algonquin.cst2335.HamzaNur;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.lifecycle.ViewModelProvider;
+
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
 
+import algonquin.cst2335.HamzaNur.databinding.ActivityMainBinding;
+import algonquin.cst2335.HamzaNur.data.MainViewModel;
+
+
+public class MainActivity extends AppCompatActivity {
+    private ActivityMainBinding variableBinding;
+    private MainViewModel model;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        model = new ViewModelProvider(this).get(MainViewModel.class);
+
+        variableBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(variableBinding.getRoot());
+
+
+
+
     }
 }
